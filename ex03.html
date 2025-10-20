@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <script type="text/javascript" src="js/ex03.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 3- Crie um novo documento HTML onde o usuário deve entrar o peso 
+     e altura e o programa deve exibir o IMC. Dependendo da faixa do
+    IMC deve informar se o usuário está abaixo do peso, peso normal, 
+    sobrepeso, obesidade mórbida. Desafio extra: Apresente as informações 
+    em cores azul para abaixo do peso, verde peso normal, sobrepeso amarlo
+     e obesidade vermelho -->
+    
+    <div class="exercicios">
+        <h3>Veja outros exercicios:</h3>
+        <ul>
+            <li><a href="ex00.html" target="_blank">Ex 01: Calculos Matemáticos</a></li>
+            <li><a href="ex02.html" target="_blank">Ex 02: Cotação de Dólar</a></li>
+            <li><a href="ex04.html" target="_blank">Ex 04: Cadastro do Usuário</a></li>
+            <li><a href="ex05.html" target="_blank">Ex 05: Progressão Aritmética</a></li>
+        </ul>
+    </div>
+
+     <div class="content">
+        <h1>IMC</h1>
+        <p>
+            O IMC é o Índice de Massa Corporal, calculado pelo peso em 
+            <b>quilogramas</b> (Kg) e a altura em <b>metros</b> (m).
+            O índice é calculado dividindo o peso do paciente pela altura elevada ao quadrado.
+            <ul>
+                <li>Menor que 18,5 é considerado MAGRESA</li>
+                <li>Entre 18,5 e 24,9 é considerado NORMAL</li>
+                <li>Entre 25,0 e 29,9 é considerado SOBREPESO</li>
+                <li>Maior que 30 é considerado OBESIDADE</li>
+            </ul>
+        </p>
+
+        <p>
+            <label for="peso">Digite seu peso: </label>
+            <input type="text" id="peso">
+            <br><br>
+            <label for="altura">Digite sua altura: </label>
+            <input type="text" id="altura">
+            <br><br>
+            <input type="button" id="Calcular" value="CALCULAR" onclick="calcularIMC()">
+            <div id="IMC">
+
+            </div>
+        </p>
+     </div>
+
+</body>
+</html>
